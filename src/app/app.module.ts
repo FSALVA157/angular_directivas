@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { NgclassComponent } from './components/ngclass/ngclass.component';
+import { ResaltadoDirective } from './directives/resaltado.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NgStyleComponent,
-    NgclassComponent
+    NgclassComponent,
+    ResaltadoDirective
   ],
   imports: [
     BrowserModule,
