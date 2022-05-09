@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { NgclassComponent } from './components/ngclass/ngclass.component';
 import { ResaltadoDirective } from './directives/resaltado.directive';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ResaltadoDirective } from './directives/resaltado.directive';
     AppComponent,
     NgStyleComponent,
     NgclassComponent,
-    ResaltadoDirective
+    ResaltadoDirective,
+    NgSwitchComponent
   ],
   imports: [
     BrowserModule,
