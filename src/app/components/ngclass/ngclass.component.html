@@ -3,3 +3,20 @@
   </div>
   <button class="btn btn-info" (click)="alerta = 'alert-info'">info</button>
   <button class="btn btn-success" (click)="alerta = 'alert-success'">success</button>
+<br><br><br>
+
+  <h3 [ngClass]="claseSelected" class="alert">Probando ng class!!</h3>
+<hr>
+  <select [(ngModel)]="claseSelected"  class="form-select" aria-label="Default select example">
+    <option *ngFor="let clase of clases">{{clase}}</option>
+    
+  </select>
+  <hr>
+  {{claseSelected}}
+
+  <br><br><br>
+  <button (click)="procesar()" class="btn btn-primary" type="button" name="button" [disabled]="ejecutando">
+    <i [ngClass]="{'fa-refresh fa-spin': ejecutando, 'fa-save': !ejecutando}" class="fa"></i>
+    <span *ngIf="!ejecutando">Guardar Cambios</span>
+    <span *ngIf="ejecutando">Espere por favor...</span>
+  </button>
