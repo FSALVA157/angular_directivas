@@ -12,7 +12,7 @@ const ROUTES: Routes = [
     path: 'usuario/:id',
     component: UsuarioComponent,
     children: USUARIO_ROUTES
-                              },
+  },
   {path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
